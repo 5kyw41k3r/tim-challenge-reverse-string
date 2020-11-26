@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Reverse Me!</title>
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(to top left, #00ffd0,#00ff99);
+    }
+
+    h1 {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 25px;
+      line-height: 1.3;
+      width: 100%;
+      padding: 5px;
+      text-align: center;
+      color: white;
+    }
+    input[type=text] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 3px solid #ccc;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        outline: none;
+        }
+        input[type=text]:focus {
+            border: 3px solid #555;
+            }
+        form {
+            font-family:'Courier New', Courier, monospace ;
+            text-align: center;
+            border-radius:0.5em
+        }
+        input[type=submit] {
+            background-color: #15af41;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 0.5em;
+        }
+        .centered {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            margin-top: -50px;
+            margin-left: -100px;
+        }
+        .text_top{
+            position: fixed;
+            top: 25%;
+            left: 36%;
+            margin-top: -50px;
+            margin-left: -100px;
+        }
+        li {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-direction: column;
+            }
+        .topleft {
+            position: absolute;
+            top: 8px;
+            left: 16px;
+            font-size: 18px;
+            }
+            a {
+                color: inherit;
+                text-decoration: none;
+                }
+
+  </style>
+</head>
+
+<body>
+  <div class="topleft">  
+    <h1><a href="#">Reverse a string!</a></h1>
+  </div>
+  <div class="centered">
+    <form>
+        <label for="fname">Enter anything!</label><br>
+        <input type="text" id="userString" name="userString"><br>
+        <input type="submit" value="Reverse It!"> 
+    </form>
+    <script src="tim-script.js"></script>
+  </div>
+</body>
+
+</html>
